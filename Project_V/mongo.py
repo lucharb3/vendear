@@ -2,10 +2,10 @@ from pymongo import MongoClient
 
 mongo = MongoClient('')
 db = mongo['Vendear']
-col = db['Test']
+vendors = db['Vendors']
 
-def saveVendor(vendor):
-    col.insert_one(vendor)
+def insertVendor(vendor):
+    vendors.insert_one(vendor)
 
 
 
