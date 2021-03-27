@@ -3,12 +3,8 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-mongo = MongoClient('mongodb+srv://MainClusterAccess:aFwfefqOdhf3HhE8@maincluster.r3ote.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongo = MongoClient('')
 db = mongo['Vendear']
-
-print('Lista')
-for a in db.list_collection_names():
-    print(a)
 
 #--Code Here--
 
@@ -26,5 +22,8 @@ def verifyPage():
 
 #-------------
 
-if __name__ == "__main__":
-    app.run()
+def runFlask():
+    if __name__ == "__main__":
+        app.run()
+
+runFlask()

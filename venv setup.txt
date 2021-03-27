@@ -1,13 +1,16 @@
 venv setup:
 
-#--FIRST TIME $ py -m venv venv
---FIRST TIME {winPowershellAdmin as admin}$ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+#FIRST TIME $ py -m venv venv
+
+#FIRST TIME {winPowershellAdmin as admin}$ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+    $ A
+
 $ .\venv\Scripts\Activate
 
 $ pip install flask
 
 $ pip install pymongo
 $ pip uninstall pymongo
-    y
+    $ y
 
 pip install pymongo[srv]
