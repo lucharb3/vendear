@@ -1,0 +1,84 @@
+body, html {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    height: 100%;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.upper-container {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+}
+.logo_nav{
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.menu {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    top: 2.5px;
+    right: 20px;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: darkred;
+    margin: 6px 0;
+    transition: 0.4s;
+    }
+.menuClose .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+.menuClose .bar2 {
+    opacity: 0;
+}
+.menuClose .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.overlayNav {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(245, 245, 245, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlayNav-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlayNav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 50px;
+    color: darkred;
+    display: block;
+    transition: 0.1s;
+}
+.overlayNav a:hover, .overlayNav a:focus {
+    color: rgb(0, 0, 0);
+}
