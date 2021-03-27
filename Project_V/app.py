@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-mongo = MongoClient('mongodb+srv://MainClusterAccess:aFwfefqOdhf3HhE8@maincluster.r3ote.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongo = MongoClient('secret')
 db = mongo['Vendear']
 
 print('Lista')
