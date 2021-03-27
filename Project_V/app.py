@@ -1,11 +1,6 @@
 from flask import Flask, redirect, url_for, render_template, request, session, flash
-from pymongo import MongoClient
 
 app = Flask(__name__)
-
-def Mongo():
-    mongo = MongoClient('')
-    db = mongo['Vendear']
 
 #--Code Here--
 
