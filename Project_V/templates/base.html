@@ -7,13 +7,17 @@
 
     <title>Vendear | {% block title %}{% endblock %}</title>
 </head>
-
+ 
     <!-- Navbar -->
 
-    {% block content %}
-    <!-- Page -->
-    {% endblock %}
-
+    <body>
+        {% block content %}
+         <!-- Page -->
+        {% endblock %}      
+    </body>
+    
 </html>
 
 <!-- Scripts -->
+
+{% block js %}{% endblock %}
