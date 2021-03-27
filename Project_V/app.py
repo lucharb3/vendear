@@ -3,8 +3,9 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-mongo = MongoClient('')
-db = mongo['Vendear']
+def Mongo():
+    mongo = MongoClient('')
+    db = mongo['Vendear']
 
 #--Code Here--
 
