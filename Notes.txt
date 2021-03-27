@@ -1,4 +1,0 @@
-Criar venv:
-$ py -m venv venv
-{winPowershellAdmin as admin}$ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-$ .\venv\Scripts\Activate
