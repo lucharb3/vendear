@@ -3,11 +3,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
 mongo = MongoClient('')
-=======
-mongo = MongoClient('secret')
->>>>>>> 0f98301b2b58790c1a3d5325256147d8ca573c11
 db = mongo['Vendear']
 
 #--Code Here--
@@ -26,13 +22,8 @@ def verifyPage():
 
 #-------------
 
-<<<<<<< HEAD
 def runFlask():
     if __name__ == "__main__":
         app.run()
 
 runFlask()
-=======
-if __name__ == "__main__":
-    app.run()
->>>>>>> 0f98301b2b58790c1a3d5325256147d8ca573c11
