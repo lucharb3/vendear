@@ -1,0 +1,7 @@
+body, html {
+    background-color: darkred;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    height: 100%;
+    margin: 0px;
+}
